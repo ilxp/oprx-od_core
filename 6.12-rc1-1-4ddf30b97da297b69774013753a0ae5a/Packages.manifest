@@ -92,7 +92,7 @@ SHA256sum: 47891117ac7a3a223ce8390af01708f621df38f9af877acb228d2c17cb8d3f27
 Description:  x86/x64 auto core loadbalance script.
 
 Package: base-files
-Version: 1-24.10.1
+Version: 1-24.10.2
 Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
 Source: feeds/base/base-files
 SourceName: base-files
@@ -100,10 +100,10 @@ License: GPL-2.0
 Section: base
 SourceDateEpoch: 1727132013
 Architecture: x86_64
-Installed-Size: 10643036
-Filename: base-files_1-24.10.1_x86_64.ipk
-Size: 10621953
-SHA256sum: a8188c7b7c8ba4499c5357a30d8851312826f7b7922f31bd3f34d56b83186fa1
+Installed-Size: 18445842
+Filename: base-files_1-24.10.2_x86_64.ipk
+Size: 18425980
+SHA256sum: 24dcd3843961c932b17d23f2e73466da309b4dfc5e8088aa2fed2df754db515c
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
