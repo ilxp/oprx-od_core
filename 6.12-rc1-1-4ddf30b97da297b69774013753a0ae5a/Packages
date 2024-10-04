@@ -64,20 +64,20 @@ Section: opt
 Architecture: x86_64
 Installed-Size: 7683
 Filename: autocore-x86_18_x86_64.ipk
-Size: 8452
-SHA256sum: 47891117ac7a3a223ce8390af01708f621df38f9af877acb228d2c17cb8d3f27
+Size: 8453
+SHA256sum: 13f04bbc84f6db1a75d663dec21b31ffb707fa749e5d5d7cd19c6c4596760c54
 Description:  x86/x64 auto core loadbalance script.
 
 Package: base-files
-Version: 1-24.10.2
+Version: 1-24.10.4
 Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, fstools, fwtool
 License: GPL-2.0
 Section: base
 Architecture: x86_64
-Installed-Size: 18445842
-Filename: base-files_1-24.10.2_x86_64.ipk
-Size: 18425980
-SHA256sum: 24dcd3843961c932b17d23f2e73466da309b4dfc5e8088aa2fed2df754db515c
+Installed-Size: 18640754
+Filename: base-files_1-24.10.4_x86_64.ipk
+Size: 18618630
+SHA256sum: 3e9714e6aedc326a2562de77a062beddb6cdf5d28112c574dd97dc0776a1b2e8
 Description:  This package contains a base filesystem and system scripts for OpenWrt.
 
 Package: block-mount
@@ -6191,10 +6191,10 @@ Depends: kernel (=6.12-rc1-1-4ddf30b97da297b69774013753a0ae5a), kmod-ipt-core, k
 License: GPL-2.0-only
 Section: kernel
 Architecture: x86_64
-Installed-Size: 6502
+Installed-Size: 6471
 Filename: kmod-ipt-nat_6.12-rc1-1_x86_64.ipk
-Size: 7302
-SHA256sum: dcdcf976cc2d8148aa9882e96f291ef1ab577d35f8de7825adcbda7a9a7ef71b
+Size: 7269
+SHA256sum: b6800e7999f2024c82181f55854e2a063ee9e2e2227fed438281d92c11f402d6
 Description:  Netfilter (IPv4) kernel modules for basic NAT targets
  Includes:
  - MASQUERADE
@@ -8227,10 +8227,10 @@ Depends: kernel (=6.12-rc1-1-4ddf30b97da297b69774013753a0ae5a), kmod-mac80211, k
 License: GPLv2
 Section: kernel
 Architecture: x86_64
-Installed-Size: 2293884
+Installed-Size: 2294439
 Filename: kmod-mt7992-23-firmware_6.12-rc1+2024-09-29-680bc70f-1_x86_64.ipk
-Size: 2295147
-SHA256sum: c9c14596acd240a91516808801b556db33dd95c30d954f763f10efbcc2fea83f
+Size: 2295690
+SHA256sum: 65e2c9ac37028cffd43465f435df93ab6b62474a19fb974d3b378cfc1ddcb213
 Description:  MediaTek MT7996 firmware (2+3 antenna variant)
 
 Package: kmod-mt7992-firmware
@@ -8239,10 +8239,10 @@ Depends: kernel (=6.12-rc1-1-4ddf30b97da297b69774013753a0ae5a), kmod-mac80211, k
 License: GPLv2
 Section: kernel
 Architecture: x86_64
-Installed-Size: 2334073
+Installed-Size: 2334795
 Filename: kmod-mt7992-firmware_6.12-rc1+2024-09-29-680bc70f-1_x86_64.ipk
-Size: 2335320
-SHA256sum: e051cca18735730817fc9bdfc89d5760f330c67bbaf3fa33c40050774f55ba35
+Size: 2336029
+SHA256sum: 4b850200436312e0c4afe992f57e703dd37f3d20eccf97d55b441cf6c36f0f26
 Description:  MediaTek MT7992 firmware
 
 Package: kmod-mt7996-233-firmware
@@ -8733,10 +8733,10 @@ Depends: kernel (=6.12-rc1-1-4ddf30b97da297b69774013753a0ae5a), kmod-nf-conntrac
 License: GPL-2.0-only
 Section: kernel
 Architecture: x86_64
-Installed-Size: 21172
+Installed-Size: 20321
 Filename: kmod-nf-nat_6.12-rc1-1_x86_64.ipk
-Size: 21910
-SHA256sum: ccb33debfe3c0df69efaedaf1518e880bea564b0cefe37c225272ac1162ffdc0
+Size: 21078
+SHA256sum: 3b7c24e0edc6f4c625f8859e57ce107e085eecfc8fe4b0e1bcb80a96b95fabab
 Description:  Netfilter NAT
 
 Package: kmod-nf-nathelper-extra
@@ -8966,10 +8966,10 @@ Depends: kernel (=6.12-rc1-1-4ddf30b97da297b69774013753a0ae5a), kmod-nft-core, k
 License: GPL-2.0-only
 Section: kernel
 Architecture: x86_64
-Installed-Size: 7297
+Installed-Size: 7179
 Filename: kmod-nft-nat_6.12-rc1-1_x86_64.ipk
-Size: 8097
-SHA256sum: 5906f92a48e987654aa8b894a60c86220d915a80fe903f1646128ff20a6ebe51
+Size: 7970
+SHA256sum: 2c2320a6c5464f61f152aa71c2c9aef1662771bfa8e4990c16f32aec9de69d3f
 Description:  Netfilter nf_tables NAT support
 
 Package: kmod-nft-netdev
