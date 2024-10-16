@@ -45,7 +45,7 @@ jobs:
 
     - name: Sync kernel modules
       run: |
-        kmod=$(curl -sk "https://api.github.com/repos/ilxp/oprx-builder/releases" | grep "browser_download_url" | grep "${{ env.target }}" | tail -1 | awk '{print $2}' | sed 's/\"//g')
+        kmod=$(curl -sk "https://api.github.com/repos/ilxp/openwrt-builder/releases" | grep "browser_download_url" | grep "${{ env.target }}" | tail -1 | awk '{print $2}' | sed 's/\"//g')
         kmod_name=$(basename $kmod | sed 's/\.tar\.gz$//;s/^[^-]*-//')
         rm -rf $kmod_name
         curl -L $kmod -o $kmod_name.tar.gz --progress-bar
@@ -61,4 +61,4 @@ jobs:
         [ -d .git ] && git init
         git add --all
         git commit -sm "${{ env.RELEASE_NAME }}"
-        git push "https://${{ github.actor }}:${{ secrets.REPO_TOKEN }}@github.com/${{ github.repository }}" HEAD:${{ matrix.target }}
+        git push "https://${{ github.actor }}:${{ secrets.workflow_token }}@github.com/${{ github.repository }}" HEAD:${{ matrix.target }}
