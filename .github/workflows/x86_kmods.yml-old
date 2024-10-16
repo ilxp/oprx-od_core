@@ -23,7 +23,7 @@ jobs:
 
     - name: Download kernel module
       run: |
-        kmod=$(curl -sk "https://api.github.com/repos/ilxp/oprx-builder/releases/latest" | grep "browser_download_url" | grep "x86_64-6.12" | tail -1 | awk '{print $2}' | sed 's/\"//g')
+        kmod=$(curl -sk "https://api.github.com/repos/ilxp/openwrt-builder/releases/latest" | grep "browser_download_url" | grep "x86_64-6.12" | tail -1 | awk '{print $2}' | sed 's/\"//g')
         kmod_name=$(basename $kmod | sed 's/\.tar\.gz$//;s/x86_64-//')
         rm -rf $kmod_name
         curl -L $kmod -o $kmod_name.tar.gz --progress-bar
@@ -37,7 +37,7 @@ jobs:
         git config --local user.email "action@github.com"
         git add --all
         git commit -m "${{ env.RELEASE_NAME }}"
-        git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.REPO_TOKEN }}@github.com/${{ github.repository }}"
+        git remote set-url --add origin "https://${{ github.actor }}:${{ secrets.workflow_token }}@github.com/${{ github.repository }}"
         git fetch --unshallow origin
         git push -u origin main
 
